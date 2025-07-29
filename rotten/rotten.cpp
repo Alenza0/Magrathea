@@ -6,7 +6,7 @@
 std::string rot(const std::string text);
 
 int main() {
-  std::string message = "Hello bitches";
+  std::string message = "mncubq";
   std::string secret = rot(message);
   std::cout << secret;
 }
@@ -17,7 +17,7 @@ std::string rot(const std::string text) {
     if (std::isupper(text[i])) {
       output += (text[i] - 'A' + 13) % 26 + 'A';
     } else if (std::islower(text[i])) {
-      output = (text[i] - 'a' + 13) % 26 + 'a';
+      output += (text[i] - 'a' + 13) % 26 + 'a';
     }
   }
   return output;
